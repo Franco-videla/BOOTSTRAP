@@ -1,0 +1,17 @@
+.carousel-caption h3 {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 0 black;
+}
+
+.carousel-caption p {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 0 black;
+}
+body{
+  max-width: 100vw;
+  overflow-x: hidden ;
+}

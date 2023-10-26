@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--CDN Bootsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--CDN Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <!--ICON-->
+            <a class="navbar-brand" href="/">Desarrollo en Argentina</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollpase">
+                <ul class="nvabar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tareas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="categoriasDropdown">
+                            <a class="dropdown-item" href="">Por hacer</a>
+                            <a class="dropdown-item" href="">En Producción</a>
+                            <a class="dropdown-item" href="">Por Testear</a>
+                            <a class="dropdown-item" href="">Completada</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="d-md-none">
+                    <ul class="navbar-nav me-auto-mb-2 mb-0">
+                        <li class="nav-item">
+                            <a class="bav-link" href="">Ticket</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/iniciar-sesion.html">Perfil</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-none d-md-flex gap-x2">
+                    <a class="nav-item nav-link p-1" href="/iniciar-sesion.html">
+                        <!--Carrito-->
+                        <i class="bi bi-cart2" style="font-size: 1.2rem;"></i>
+                    </a>
+                    <a class="nav-item nav-link p-1" href="">
+                        <!--Usuario-->
+                        <i class="bi bi-person-bounding-box" style="font-size: 1.2rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!---MOBILE-->
+                <img src="https://img.freepik.com/foto-gratis/material-oficina-sobre-mesa_23-2148148305.jpg?w=740&t=st=1698246903~exp=1698247503~hmac=f11443f9ef5a80a3e4b0bf51f1899360924abb89cc79cda7b0d06aac8fb368fc"
+                    class="d-block d-md-none w-100" alt="...">
+                <!---DESKTOP-->
+                <img src="https://img.freepik.com/foto-gratis/concepto-negocio-copia-espacio-mesa-escritorio-oficina-enfoque-pluma-analisis-grafico-computadora-bloc-notas-taza-cafe-tablero-desk-vintage-retro-filtro-enfoque-selectivo_1418-555.jpg?w=1380&t=st=1698246276~exp=1698246876~hmac=3641ed8fb012b9fe245641484805358597852d1ca2fb03a73a6cbe0ffa18e509"
+                    class="d-none d-md-block w-100" alt="...">
+                <div class="carousel-caption d-block text-start">
+                    <h3 class="fs-1">Somos el mejor equipo de Aplicaciones Agiles</h3>
+                    <p>Te Brindamos todo el ascesorameinto en Desarrollo de Software</p>
+                    <p><a class="btn btn-lg btn-primary" href="#selector-categorias">Explorar sills</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!---MOBILE-->
+                <img src="https://img.freepik.com/foto-gratis/primer-plano-mano-persona-negocios-que-dibuja-flecha-creciente-grafico-sobre-portapapeles_23-2147972782.jpg?w=740&t=st=1698247102~exp=1698247702~hmac=0b4ec33e916348e89bc3c55f3054da64882ea2910945ded54bfa8cbdb46e72d7"
+                    class="d-block d-md-none w-100" alt="...">
+                <!---DESKTOP-->
+                <img src="https://img.freepik.com/foto-gratis/acercamiento-objetos-educacion-economia_23-2149113525.jpg?w=1380&t=st=1698246532~exp=1698247132~hmac=42d3f343e41dba0d4d647e15ba2aa2bf24ec9bfdd15add9e53831f63e379c60e"
+                    class="d-none d-md-block w-100" alt="...">
+                <div class="carousel-caption d-block">
+                    <h3 class="fs-1">Los mejores expertos del país</h3>
+                    <p>Trabajamos con las útimas tecnologías del Front y back cada día.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#selector-categorias">Conocé más</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <!---MOBILE-->
+                <img src="https://img.freepik.com/foto-gratis/dos-socios-comerciales-estan-trabajando-juntos_144627-15829.jpg?w=740&t=st=1698247144~exp=1698247744~hmac=5941bfebfd2411fc9391154637ef5896347761dcdd586fb1688e6878ca8971d0"
+                    class="d-block d-md-none w-100" alt="...">
+                <!---DESKTOP-->
+                <img src="https://img.freepik.com/foto-gratis/mano-mujer-negocios-graficos-financieros-portatil-mesa_1232-4831.jpg?w=1380&t=st=1698246385~exp=1698246985~hmac=36c9c055e33c4eaf8ce18e5d4b4dc143b7ce2766ab8b4639fd10f9eff3b1ca65"
+                    class="d-none d-md-block w-100" alt="...">
+                <div class="carousel-caption d-block text-end">
+                    <h3 class="fs-1">Envíos gratis por tiempo limitado</h3>
+                    <p>En pedidos mayores a $3550 el envío va por nuestra cuenta en todo el país.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#selector-categorias">Compra ahora</a></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <main>
+        <!--PRODUCTOS-->
+        <!--SELECTOR DE CATEGORIAS-->
+        <section class="container" id="selector-categorias">
+            <p class="fs-2 text-center">Seleccionar categoría</p>
+            <div class="row gap-4">
+                <div class="col d-flex justify-content-center p-0">
+                    <a href="#Por hacer"
+                        class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
+                        <img src="/assets/categorias/icono1.png" alt="Por hacer" style="width: 25px; height: 25px;">
+                        <span class="fs-4 text-dark-emphasis">Por hacer</span>
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-center p-0">
+                    <a href="#EnProducción"
+                        class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
+                        <img src="/assets/categorias/icono2.png" alt="EnProducción" style="width: 25px; height: 25px;">
+                        <span class="fs-4 text-dark-emphasis">En Producción</span>
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-center p-0">
+                    <a href="#PorTestear"
+                        class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
+                        <img src="/assets/categorias/icono3.png" alt="PorTestear" style="width: 25px; height: 25px;">
+                        <span class="fs-4 text-dark-emphasis">Por Testear</span>
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-center p-0">
+                    <a href="#Completada"
+                        class="border border-1 border-black d-flex gap-1 align-items-center rounded p-1 text-decoration-none">
+                        <img src="/assets/categorias/icono4.png" alt="Completada" style="width: 25px; height: 25px;">
+                        <span class="fs-4 text-dark-emphasis">Completada</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--CATEGORÍAS Tareas-->
+        <section class="container-fluid" id="categorias">
+            <section class="text-center mb-5" id="porHacer">
+              <h3 class="display-6">Por Hacer</h3>
+              <div class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+  
+                <!--PRODUCTO-->
+                <div class="col">
+                  <div class="card h-100">
+                    <img 
+                      class="card-img-top"
+                      src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" 
+                      alt=""
+                    >
+                    <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">Título</h5>
+                        <span>tiempo:18</span>
+                      </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center">
+                        <a href="" class="btn btn-outline-success mt-auto">
+                          Ver Tarea
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+   
+            </section>
+  
+  
+            <section class="text-center mb-5" id="enProduccions">
+              <h3 class="display-6">En Producción</h3>
+              <div class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+  
+                <!--PRODUCTO-->
+                <div class="col">
+                  <div class="card h-100">
+                    <img 
+                      class="card-img-top"
+                      src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" 
+                      alt=""
+                    >
+                    <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">Titulo</h5>
+                        <span>tiempo:19</span>
+                      </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center">
+                        <a href="" class="btn btn-outline-success mt-auto">
+                          Ver Tarea
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+  
+  
+            <section class="text-center mb-5" id="porTestear">
+              <h3 class="display-6">Por Testear</h3>
+              <div class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+  
+                <!--PRODUCTO-->
+                <div class="col">
+                  <div class="card h-100">
+                    <img 
+                      class="card-img-top"
+                      src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" 
+                      alt=""
+                    >
+                    <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">Título</h5>
+                        <span>tiempo:22</span>
+                      </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center">
+                        <a href="" class="btn btn-outline-success mt-auto">
+                         Ver Tarea
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+  
+            <section class="text-center mb-5" id="completada">
+              <h3 class="display-6">Completada</h3>
+              <div class="row gap-4 gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+  
+                <!--PRODUCTO-->
+                <div class="col">
+                  <div class="card h-100">
+                    <img 
+                      class="card-img-top"
+                      src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" 
+                      alt=""
+                    >
+                    <div class="card-body p-4">
+                      <div class="text-center">
+                        <h5 class="fw-bolder">Titulo</h5>
+                        <span>tiempo:34</span>
+                      </div>
+                    </div>
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center">
+                        <a href="" class="btn btn-outline-success mt-auto">
+                          Ver Tarea
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+  
+          </section>
+  
+        </main>
+  
+      <div
+        class="container"
+      >
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">Colmena Tec</a>
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 El Atareado, Inc</span>
+          </div>
+
+    <!--CDN Bootsrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--JS-->
+    <script type="module" src="lib/pages/home.js"></script>
+</body>
+
+</html>
